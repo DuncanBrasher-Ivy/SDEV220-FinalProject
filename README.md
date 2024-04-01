@@ -1,4 +1,4 @@
-# IvyMesh - A clone of Canvas for Ivy Tech
+# IvyMesh - A clone of [Canvas](https://www.instructure.com/) for Ivy Tech
 
 
 
