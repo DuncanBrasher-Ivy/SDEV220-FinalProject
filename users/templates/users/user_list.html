@@ -1,0 +1,36 @@
+{% extends 'pages/base.html' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+        <title>IvyMesh - User Directory</title>
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        <div class="container overflow-hidden text-center">
+            <header>
+                <h1><a href="#">IvyMesh - User Directory</a></h1>
+            </header>
+        </div>
+
+        <div class="container overflow-hidden text-center">
+            <div class="card">
+                <div class="card-body">
+                        <ul class="list-group">
+                            {% for user in users %}
+                            <li class="list-group-item">
+                                <div>
+                                    <h2><p>{{ user.username|linebreaksbr }}</p></h2>
+                                    <h3><a href="mailto:{{ user.email }}">{{ user.email }}</a></h2>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    </body>
+</html>
+
