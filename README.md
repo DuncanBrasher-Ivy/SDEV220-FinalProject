@@ -34,6 +34,12 @@ These are the basic steps to set up a local development environment for IvyMesh:
         source .venv/bin/activate.ps1
         ```
 
+    - Fish
+
+        ```
+        source .venv/bin/activate.fish
+        ```
+
 
 4. Download dependencies
 
