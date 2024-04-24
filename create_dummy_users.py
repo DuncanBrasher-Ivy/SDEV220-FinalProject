@@ -1,4 +1,7 @@
+from IvyMesh import settings
 from users.models import IvyMeshUser
+
+settings.configure()
 
 for role, m in [("admin", 9), ("staff", 19), ("student", 99)]:
     for n in range(m):
