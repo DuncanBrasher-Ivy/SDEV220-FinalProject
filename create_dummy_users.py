@@ -1,7 +1,8 @@
-from users.models import IvyMeshUser
 import os
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'IvyMesh.settings')
+
+from users.models import IvyMeshUser
 
 for role, m in [("admin", 9), ("staff", 19), ("student", 99)]:
     for n in range(m):
