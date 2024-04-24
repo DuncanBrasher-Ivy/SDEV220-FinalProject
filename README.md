@@ -54,14 +54,24 @@ These are the basic steps to deploy to [https://pythonanywhere.com](https://pyth
 
 
 1. Create a Bash shell on the Python Anywhere website
-2. Run the following command:
+
+2. Run the autoconfig:
 
     ```
     pa_autoconfigure_django.py https://github.com/DuncanBrasher-Ivy/SDEV220-FinalProject.git --branch=main
     ```
 
 
+3. Create the migrations:
+
+    ```
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    ```
+
+
 4. For some dummy users, run the following command:
+
     ```
     python3 ./create_dummy_users.py
     ```
