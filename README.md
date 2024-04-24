@@ -48,3 +48,16 @@ These are the basic steps to set up a local development environment for IvyMesh:
     ```
 
 
+# Deployment
+## Python Anywhere
+These are the basic steps to deploy to [https://pythonanywhere.com](https://pythonanywhere.com):
+
+
+1. Create a Bash shell on the Python Anywhere website
+2. Run the following command:
+
+    ```
+    pa_autoconfigure_django.py https://github.com/DuncanBrasher-Ivy/SDEV220-FinalProject.git --branch=main
+    ```
+
+
