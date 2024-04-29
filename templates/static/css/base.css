@@ -1,0 +1,40 @@
+/*General css code*/
+body{
+    background-color: silver    ;
+}
+
+/*General css code ends here*/
+
+
+/*Nav css code starts here*/
+
+#navarea{
+    background-color: #006648;
+}
+
+nav .navtext{
+    color: silver;
+}
+nav a .navtext:link{
+  color: aqua;
+}
+nav .navtext:hover{
+    color: #FFFFFF;
+}
+nav #searchbutton{
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+nav #searchbutton:hover{
+  background-color: #FFFFFF;
+  color: #006648 ;
+}
+
+nav #responsivebutton{
+  border: 1px solid #FFFFFF;
+}
+nav #responsivebutton:hover{
+  background-color: #FFFFFF;
+}
+
+/*Nav css code ends here*/
