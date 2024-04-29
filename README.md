@@ -73,6 +73,6 @@ These are the basic steps to deploy to [https://pythonanywhere.com](https://pyth
 4. For some dummy users, run the following command:
 
     ```
-    python3 ./create_dummy_users.py
+    ./run_pyscript_django.sh ./create_dummy_users.py
     ```
 
