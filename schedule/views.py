@@ -1,7 +1,8 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def schedule(request):
-    user = None
-    return render(request, 'schedule/schedule.html', {'logged_in': user})
+    return render(request, 'schedule/schedule.html')
 
