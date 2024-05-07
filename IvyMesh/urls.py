@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#impor the views from schedule
+from schedule import views 
 
 urlpatterns = [
     path('admin/', admin.site.urls, name="admin"),
@@ -25,5 +27,13 @@ urlpatterns = [
     path('users/', include('users.urls'), name="users"),
     path('schedule/', include('schedule.urls'), name="schedule"),
     path('course_modules/', include('course_modules.urls'), name="course_modules"),
+
+    #adding the urls for the calendar
+    path('all_events/', views.all_events, name='all_events'), 
+    path('add_event/', views.add_event, name='add_event'), 
+    path('update/', views.update, name='update'),
+    path('remove/', views.remove, name='remove'),
+
+    #Calendar urls ends here 
 ]
 
