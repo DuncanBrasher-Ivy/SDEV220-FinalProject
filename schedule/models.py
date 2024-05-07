@@ -2,12 +2,13 @@ from django.db import models
 
 # Create your models here.
 
-#Event class
-class Events(models.Model):
-    id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=200,null=True,blank=True)
-    start = models.DateTimeField(null=True,blank=True)
-    end = models.DateTimeField(null=True,blank=True)
- 
-    class Meta:  
-        db_table = "tblevents"
+#The following clas is for the information of the courses
+class Post(models.Model):
+    course_id = models.BigAutoField(primary_key=True)
+    course_name = models.CharField(max_length=10)
+    instruction_mode = models.CharField(max_length=12)
+    part_of_term = models.CharField(max_length=15)
+    credits = models.IntegerField()
+    campus = models.CharField(max_length=20)
+    days = models.DateTimeField()
+    location =  models.CharField(max_length=10)
