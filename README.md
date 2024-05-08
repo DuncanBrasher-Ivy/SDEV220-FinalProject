@@ -65,12 +65,19 @@ These are the basic steps to deploy to [https://pythonanywhere.com](https://pyth
 3. Create the migrations:
 
     ```
-    python3 manage.py makemigrations
+    python3 manage.py makemigrations;
     python3 manage.py migrate
     ```
 
 
-4. For some dummy users, run the following command:
+4. Collect the static files:
+
+    ```
+    python3 manage.py collectstatic
+    ```
+
+
+5. For some dummy users, run the following command:
 
     ```
     ./run_pyscript_django.sh ./create_dummy_users.py
